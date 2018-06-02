@@ -72,6 +72,7 @@ classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = [
 
 # Fitting the ANN to the Training set
 classifier.fit(X_train, y_train, batch_size = 10, epochs = 100)
+# Keras expects X_train and y_train to be numpy arrays
 # batch_size means update weights after 10 sets of observations
 
 # -----------------------------------------------------------------------------
