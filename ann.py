@@ -67,6 +67,7 @@ classifier.add(Dense(units = 1, kernel_initializer = 'uniform', activation = 'si
 
 # Compiling the ANN(Applying Stochastic Gradient Descent to whole  neural network)
 classifier.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accuracy'])
+# 'adam' means we are using Stochastic Gradient Descent here.
 
 #Note : For more than 2 categories of dependent variables use 'categorical_crossentropy' as loss function.
 
